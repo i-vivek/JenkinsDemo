@@ -33,5 +33,5 @@ def printHelloNode() {
 }
 
 def printCustomName() {
-	sh "echo hello ${ORGANISATION_ID}"
+	sh "echo hello ${NAME_TO_PRINT}"
 }
