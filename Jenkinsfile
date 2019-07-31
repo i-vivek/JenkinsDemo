@@ -3,8 +3,12 @@ pipeline {
   stages {
     stage('print') {
       steps {
-        sh "echo hello world"
+        printHelloWorld
       }
     }
   }
+}
+
+def printHelloWorld() {
+	sh "echo hello world"
 }
