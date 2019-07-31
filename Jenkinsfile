@@ -10,14 +10,10 @@ pipeline {
 }
 
 node {
-	stages {
-    stage('print') {
-      steps {
-        printHelloNode()
-      }
+	stage('print') {
+		printHelloNode()
     }
-  }
-}
+ }
 
 def printHelloWorld() {
 	sh "echo hello world"
