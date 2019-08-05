@@ -1,3 +1,7 @@
+import hudson.FilePath
+import hudson.model.ParametersAction
+import hudson.model.FileParameterValue
+import hudson.model.Executor
 properties([
   buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '14', numToKeepStr: '')),
   parameters([
