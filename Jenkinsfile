@@ -156,6 +156,8 @@ def copyFilesIntoWorkspace() {
         if (env['WORKSPACE'] == null) {
             error "no workspace in current context"
         }
+        println env['NODE_NAME']
+        println env['WORKSPACE']
         nodeName = env['NODE_NAME'] == 'develop' ? '(develop)' : env['NODE_NAME']
         workspace = new FilePath(Jenkins.getInstance().getComputer(nodeName).getChannel(), env['WORKSPACE']+"/onboardingscripts")
         echo "workspace = ${workspace}"
